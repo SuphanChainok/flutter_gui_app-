@@ -92,19 +92,10 @@ class ForgetPassScreen extends StatelessWidget {
                 Obx(
                   () => SizedBox(
                     width: double.infinity,
-                    height: 50,
                     child: ElevatedButton(
                       onPressed: controller.isLoading.value
                           ? null
                           : controller.sendResetLink,
-                      style: ElevatedButton.styleFrom(
-                        backgroundColor: Theme.of(context).primaryColor,
-                        foregroundColor: Colors.white,
-                        shape: RoundedRectangleBorder(
-                          borderRadius: BorderRadius.circular(12),
-                        ),
-                        elevation: 2,
-                      ),
                       child: controller.isLoading.value
                           ? const SizedBox(
                               height: 20,
@@ -121,13 +112,7 @@ class ForgetPassScreen extends StatelessWidget {
                               children: [
                                 const Icon(Icons.send, size: 20),
                                 const SizedBox(width: 8),
-                                const Text(
-                                  'Send Reset Link',
-                                  style: TextStyle(
-                                    fontSize: 16,
-                                    fontWeight: FontWeight.w600,
-                                  ),
-                                ),
+                                const Text('Send Reset Link'),
                               ],
                             ),
                     ),
