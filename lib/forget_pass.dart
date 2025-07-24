@@ -159,7 +159,7 @@ class ForgetPassScreen extends StatelessWidget {
                         ),
                         TextButton(
                           onPressed: () {
-                            controller.resetState();
+                            Get.delete<ForgetPassController>();
                             Get.to(() => const LoginScreen());
                           },
                           child: Text(
@@ -182,7 +182,8 @@ class ForgetPassScreen extends StatelessWidget {
                         ),
                         TextButton(
                           onPressed: () {
-                            controller.resetState();
+                            // controller.resetState();
+                            Get.delete<ForgetPassController>();
                             Get.to(() => const RegisScreen());
                           },
                           child: Text(

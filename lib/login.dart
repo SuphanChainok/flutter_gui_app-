@@ -136,6 +136,7 @@ class LoginScreen extends StatelessWidget {
                     ),
                     TextButton(
                       onPressed: () {
+                        Get.delete<LoginController>();
                         Get.to(() => const ForgetPassScreen());
                       },
                       child: Text(
