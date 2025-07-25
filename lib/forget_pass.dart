@@ -3,8 +3,6 @@ import 'package:form_validate/regis.dart';
 import 'controller/reset_pass_controller.dart'; // Import your controller
 import 'package:get/get.dart';
 
-import 'login.dart';
-
 class ForgetPassScreen extends StatelessWidget {
   const ForgetPassScreen({super.key});
 
